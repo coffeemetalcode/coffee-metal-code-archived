@@ -8,7 +8,8 @@ coffee | metal | code
 2. is mobile responsive
 3. uses [mongoDB®](https://www.mongodb.com/) to store projects and related data.
 4. a *.js file will populate the 'gallery' page with dynamic HTML `<div>` blocks, grabbing project info from mongoDB.
-5. final deployment on [Heroku](https://www.heroku.com/home).
+5. initial deployment on [Github Pages.](https://dbstocker.github.io/coffee-metal-code/)
+6. final deployment on [Heroku.](https://www.heroku.com/home)
 
 ### Links
 [github](https://dbstocker.github.io/coffee-metal-code/) | [heroku](#)
