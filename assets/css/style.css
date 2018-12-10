@@ -8,12 +8,8 @@ body {
   color: #444;
 }
 
-.splash-title {
-  font-family: "Special Elite", cursive;
-  font-size: 6rem;
-  /* color: #fffdd0; */
-  vertical-align: middle;
-  /* margin: auto; */
+.logo-large {
+  width: 796px;
 }
 
 .mid-page {
@@ -24,6 +20,10 @@ body {
   position: absolute;
   top: 50%;
   width: 100%;
+}
+
+.light-heading {
+  font-weight: normal;
 }
 
 a:link {
