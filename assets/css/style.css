@@ -3,9 +3,13 @@ body {
   /* background-color: #fffdd0; */
   background-color: #e1dabb;
   font-family: 'Fira Sans', sans-serif;
-  width: 1024px;
   margin: auto;
   color: #444;
+}
+
+.main {
+  width: 968px;
+  margin: auto;
 }
 
 .logo-large {
@@ -15,11 +19,11 @@ body {
 .mid-page {
   /* left: 0; */
   /* line-height: 200px; */
-  margin: auto;
-  margin-top: -100px;
-  position: absolute;
-  top: 50%;
-  width: 100%;
+  /* margin: auto; */
+  margin-top: 250px;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* width: 100%; */
 }
 
 .light-heading {
