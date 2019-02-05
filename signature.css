@@ -1,0 +1,29 @@
+body {
+  line-height: 150%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444444ff;
+  /* text-transform: lowercase; */
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #444444ff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  height: 21px;
+  margin-top: 4.5px;
+}
+
+.contact {
+  font-size: 18px;
+}
