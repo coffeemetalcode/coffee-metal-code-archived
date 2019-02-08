@@ -1,54 +1,28 @@
 const express = require("express");
+
+const mongoose = require("mongoose");
+const routes = require("./routes");
 require("dotenv").config();
 const keys = require("./keys");
-const axios = require("axios");
-// const logger = require("morgan"); // maybe I'll use this?
-// const mongoose = require("mongoose");
-
-// const routes = require("./routes");
+const app = express();
 const PORT = process.env.PORT || 3100;
 
-// Require all models
-// const db = require("./models");
-
-// Initialize Express
-const app = express();
-
-// Configure middleware
-
-// Use morgan logger for logging requests
-// app.use(logger("dev"));
-
-// Parse request body as JSON
+// Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Make public a static folder
-app.use(express.static("public"));
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
-// app.use(routes);
+// Add routes, both API and view
+app.use(routes);
 
-/* SPOTIFY API ROUTE */ // --> Put in ./routes/api/spotify.js
+// Connect to the Mongo DB
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/coffeemetalcode");
 
-const Spotify = require("node-spotify-api");
-const spotify = new Spotify(keys.spotify);
-
-app.get("/api/spotify", (req, res) => {
-  // res.send("spotify api call");
-  spotify
-    .search({ type: "track", query: "Coming Home" })
-    .then(response => {
-      res.json(response.tracks.items[0]);
-      // console.log(response.tracks.items);
-    })
-    .catch(err => {
-      console.log("Error occured: " + err);
-    });
-});
-
-/* END SPOTIFY API ROUTE */
-
-// Start the server
+// Start the API server
 app.listen(PORT, () => {
-  console.log("App running on port " + PORT + "!");
+  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
