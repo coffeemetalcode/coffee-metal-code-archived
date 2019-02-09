@@ -1,3 +1,5 @@
+/* This file retained as an example */
+
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 

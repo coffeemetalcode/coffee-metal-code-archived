@@ -1,15 +1,4 @@
-/* Spotify Routes */
-
-/* 
-
-Spotify API Docs here:
-https://developer.spotify.com/documentation/web-api/
-
-More interesting use cases for the Spotify API demonstrated with cURL. This tool is helpful for converting cURL requests into javascript for use in a node.js environment (and others):
-
-https://curl.trillworks.com/#node
-
-*/
+/* BandsInTown Routes */
 
 const router = require("express").Router();
 
@@ -19,11 +8,24 @@ const keys = require("../../keys");
 const Spotify = require("node-spotify-api");
 const spotify = new Spotify(keys.spotify);
 
-// Matches with "/api/spotify"
-// Sample route to see successful get request from Spotify API
+const rp = require("request-promise");
+
+/*
+
+rp("url-to-bandsintown-api") // <-- waiting for API key
+  .then(body => {
+    // console.log(body);
+  })
+  .catch(err => {
+    console.log(err);
+  });
+
+*/
+
+// Matches with "/api/bands"
+// Sample route to see successful get request from BandsInTown API
 router.get("/", (req, res) => {
   // res.send("spotify api call");
-
   spotify
     .search({ type: "track", query: "Coming Home" })
     .then(response => {

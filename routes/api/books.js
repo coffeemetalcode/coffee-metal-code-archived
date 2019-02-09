@@ -1,3 +1,5 @@
+/* This file retained as an example */
+
 const router = require("express").Router();
 const booksController = require("../../controllers/booksController");
 
