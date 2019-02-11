@@ -25,6 +25,7 @@ class Books extends Component {
         this.setState({ books: res.data, title: "", author: "", synopsis: "" })
       )
       .catch(err => console.log(err));
+    console.log(this.state.title);
   };
 
   deleteBook = id => {

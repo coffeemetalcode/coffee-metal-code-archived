@@ -1,0 +1,17 @@
+.navbar {
+  background-color: #996633;
+}
+
+.logo {
+  width: 250px;
+  margin-bottom: 3.0px;
+}
+
+.cmc-nav, .navbar, .navbar-sticky, .navbar-expand-lg, .navbar-light, .navbar-brand, .navbar-default {
+  color: teal;
+}
+
+/* .navbar-brand, .navbar-default, .navbar-inverse {
+  background-color: black;
+  color: teal;
+} */

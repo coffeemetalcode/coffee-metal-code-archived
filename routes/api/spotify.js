@@ -20,10 +20,10 @@ const Spotify = require("node-spotify-api");
 const spotify = new Spotify(keys.spotify);
 
 // Matches with "/api/spotify"
-// Sample route to see successful get request from Spotify API
 router.get("/", (req, res) => {
   // res.send("spotify api call");
-
+  
+  // Sample route to see successful get request from Spotify API <-- replace with 'recently-played' endpoint
   spotify
     .search({ type: "track", query: "Coming Home" })
     .then(response => {

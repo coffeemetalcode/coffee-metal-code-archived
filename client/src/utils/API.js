@@ -16,5 +16,9 @@ export default {
   // Saves a book to the database
   saveBook: function(bookData) {
     return axios.post("/api/books", bookData);
+  },
+  // Get site data from mongoDB
+  getSites: () => {
+    return axios.get("/api/admin/sites");
   }
 };
