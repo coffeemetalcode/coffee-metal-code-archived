@@ -1,0 +1,42 @@
+/* Style the Tile component */
+
+button {
+  background-color: #343a40e8;
+  color: #ffffff;
+  border: 1px solid #343a40;
+  padding: 5px 15px 5px 15px;
+}
+
+.tile {
+  position: relative;
+  width: 288px;
+}
+
+/* Make the image responsive */
+.tile img {
+  width: 100%;
+  height: 144px;
+  margin-bottom: 20px;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.tile .tile-btn {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  /* background-color: #4aaaa5; */
+  background-color: #343a40e8;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.tile .tile-btn:hover {
+  /* background-color: #71c1bd; */
+  background-color: #5c6670e8;
+}
