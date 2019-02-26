@@ -22,17 +22,16 @@ button {
 /* Style the button and place it in the middle of the container/image */
 .tile .tile-btn {
   position: absolute;
-  top: 65%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  /* background-color: #4aaaa5; */
   background-color: #343a40e8;
   color: white;
   font-size: 16px;
   padding: 12px 24px;
   border: none;
-  cursor: pointer;
+  cursor: auto;
   width: 100%;
 }
 

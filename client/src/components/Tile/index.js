@@ -8,7 +8,7 @@ function Tile() {
     <div className="tile">
       <img src="../../assets/images/placeholder-profile.jpg" />
       <a href="#" target="_blank">
-        <button className="tile-button">Site</button>
+        <button className="tile-btn">Site</button>
       </a>
     </div>
   );

@@ -37,9 +37,7 @@ class Gallery extends Component {
           <Row>
             {this.state.sites.map(site => (
               <Col size="md-4 sm-12" key={site._id}>
-                <Tile>
-                  <h1>{site.title} Site</h1>
-                </Tile>
+                <Tile />
               </Col>
             ))}
           </Row>

@@ -1,0 +1,18 @@
+/* Style for the Global App */
+/* 
+  photo attribution:
+  https://www.deviantart.com/aqueous-sun-textures/art/Untitled-Texture-CXXXXXXXXXVII-81453609
+
+*/
+
+body {
+  background-image: url("../src/images/coffee-stain-background.jpg");
+}
+
+.main {
+  width: 85%;
+  /* background-color: #f2e6d98c; */
+  border-radius: 5px;
+  margin: auto;
+  padding: 10px;
+}
